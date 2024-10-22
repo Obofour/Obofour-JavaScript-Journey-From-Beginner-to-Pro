@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <script>
+        // Declare and initialize variable
+        var x = 6;
+        document.getElementById("demo").innerHTML = x;
+
+        const cars=["Toyota","BMW","Volvo","Saab"];
+
+        cars[0]="Camry";
+
+        cars.push("Honda");
+
+        // cars.pop("Honda")
+
+        document.getElementById("demo1").innerHTML=cars;
+        const  car= {type:"Flat",model:"500",color:"white"};
+        car.color="red";
+        car.owner="Obofour";
+         document.getElementById("demo2").innerHTML="This car belongs to"+" "+ car.owner;
+
+    </script>  
+</body>
+</html>
+

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+        let text="Howdy Obofour";
+        document.getElementById("demo").innerHTML=text;
+    </script>
+    <p id="demo1"></p>
+
+    <script>
+    let carName1 = "Volvo XC60"; // Double quotes
+    let carName2 = 'Volvo XC60'; // Single quotes
+    
+    document.getElementById("demo1").innerHTML =
+    carName1 + " " + carName2; 
+    </script>
+
+<h2>Never Create Strings as Objects</h2>
+<p>Strings and objects cannot be safely compared.</p>
+<p id="demo4"></p>
+<script>
+    Username="Nana";
+    Password= new String("Nana");
+    document.getElementById("demo4").innerHTML=(Username==Password);
+</script>
+<h2>Never Create Strings as Objects</h2>
+<p>JavaScript objects cannot be compared.</p>
+<p id="demo5"></p>
+<script>
+x=new String("John");
+y=new String("John");
+
+document.getElementById("demo5").innerHTML=(x==y);
+
+</script>
+</body>
+</html>

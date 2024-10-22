@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+    <p id="demo5"></p>
+    <button type="button" onclick="myfunction()">Try it</button>
+    <script>
+        
+        // let x,y,z;
+        x=5;
+        y=6;
+        z=x+y;
+        document.getElementById("demo1").innerHTML="The sum of x and y is "+z+".";
+        
+        document.getElementById("demo2").innerHTML="Hello Dolly";
+        a=3;
+        b=4;
+        c=a+b;
+        document.getElementById("demo").innerHTML=c;
+
+        function myfunction(){
+            document.getElementById("demo3").innerHTML="Hello world";
+            document.getElementById("demo4").innerHTML="how are you";
+        }
+        var t=2+3+"5";
+        document.getAnimations("demo5").innerHTML=t;
+        
+    </script>
+    </body>
+</html>

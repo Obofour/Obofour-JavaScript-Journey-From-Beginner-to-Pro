@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="demo2">
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+    <script>
+        function myfunction(p1,p2){
+            return p1 * p2
+        }
+        let result=myfunction(4,3)
+        document.getElementById("demo").innerHTML=result;
+
+        function product(a,b){
+            return a*b
+
+        }
+        let x=product(10,2);
+        document.getElementById("demo1").innerHTML=x;
+    </script>
+    <!-- Invoke (call) a function that converts from Fahrenheit to Celsius: -->
+    <script>
+        function Celsius(Fahrenheit){
+            return (Fahrenheit-273) * (5/9)
+
+        }
+        let conversion=Celsius(278);
+        document.getElementById("demo2").innerHTML=conversion;
+    </script>
+    <script>
+        
+    let text = "Outside: " + typeof carName;
+    document.getElementById("demo3").innerHTML = text;
+    
+    function myFunction() {
+      let carName = "Volvo";
+      let text = "Inside: " + typeof carName + " " + carName; 
+      document.getElementById("demo4").innerHTML = text;
+    }
+    
+    myFunction();
+    </script>
+    
+</body>
+</html>
