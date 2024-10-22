@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>JavaScript String length</p>
+    <P id="demo"></P>
+    <script>
+        let text="ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+        document.getElementById("demo").innerHTML=text.length;
+    </script>
+<hr>
+<p>Extracting String Characters</p>
+    <ol>
+        <p>There are 4 method for Extracting String Characters</p>
+        <li>The at(position) Method</li>
+        <li>The charAt(position) Method</li>
+        <li>The charCodeat(position) Method</li>
+    </ol>
+    <p> JavaScript String charAt()</p>
+    <p>this returns the Characters at a specific index (position) in a string</p>
+    <p id="demo1"></p>
+    <script>
+        var message="Hello world";
+        document.getElementById("demo1").innerHTML=message.charAt(0)
+    </script>
+<hr>
+<p>JavaScript string charCodeAt()</p>
+<p>The charCodeat() method returns the unicode of te Characters at agiven position in a string</p>
+<p id="demo3"></p>
+    <script>
+        let X="HELLO WORLD";
+        document.getElementById("demo3").innerHTML=X.charCodeAt(72);
+    </script>
+    <hr>
+<p>JavaScript String at()</p>
+<p>E52022 introduced the string method at()</p>
+<p id="demo4"></p>
+<script>
+    const name="W3Schools";
+    letter=name.at(2);
+    document.getElementById("demo4").innerHTML=letter;
+</script>
+<p>Note te at() method is a new addition to JavaScript</p>
+<hr>
+<p>Property Access[]</p>
+<ol>
+    <p> Property access might be a little <b>unpredictable </b></p>
+    <li>it makes string look like arrays(but they are not)</li>
+    <li>If There ids no character found [ ] returns undefined ehile charAt() return empty string</li>
+    <li>It is read only.str[0]="A" gives no error(but does not work)</li>
+</ol>
+<p id="demo5"></p>
+<script>
+let Y="hello World";
+document.getElementById("demo5").innerHTML='the first character of the string id :'+ Y[0];
+</script>
+<hr>
+<p>Extracting String Part</p>
+<ol>
+    <p>There are 3 methods for Extracting a part of a string </p>
+    <li>slice(start,end)</li>
+    <li>substring(start,end)</li>
+    <li>substr(start,end)</li>
+</ol>
+<p>JavaScript String slice()</p>
+slice() extract part of a string and returns the extracted part in a new string.
+<p>The method takes 2 parameters :start position and end position(end not included)</p>
+<p id="demo6"></p>
+<script>
+    let T="Apple, Banana, kiwi";
+    let part=T.slice(7,13);
+    document.getElementById("demo6").innerHTML=part
+</script>
+<script>
+    let M="Apple, Banana, kiwi";
+    let Part=M.slice(7);
+    document.getElementById("demo6").innerHTML=Part
+</script>
+<!-- <p>The slice Method </p>
+<p>extract a part of a string counting</p> -->
+</body>
+</html>
