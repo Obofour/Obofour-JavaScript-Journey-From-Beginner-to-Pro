@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>A string is converted to upper case with toUpperCase()</p>
+    <p>A string is converted to lower case with toLowerCase()</p>
+    <p id="uppercase"></p>
+    <p id="lowercase"></p>
+    <script>
+        let message="Hello world";
+        let converted=message.toUpperCase()
+        document.getElementById('uppercase').innerHTML=converted;
+
+        // Lower case
+        let text="HELLO WORLD"
+        let update=text.toLowerCase();
+        document.getElementById('lowercase').innerHTML=update;
+    </script>
+    <hr>
+    <p>The concat() method can be used instead of a plus operator.</p>
+    <p>concat() join two or more string</p>
+    <p id="concat"></p>
+    <script>
+        text1="Hello";
+        text2="World";
+        text3=text1.concat(" ",text2);
+        document.getElementById('concat').innerHTML=text3;
+
+    </script>
+    <p>All string return a new string .they dont modify te original string</p>
+    <p>formally said:</p>
+    <p>String are immutable:string cannot be changed but can only be replaced.</p>
+    <hr>
+    <hr>
+
+    
+</body>
+</html>
