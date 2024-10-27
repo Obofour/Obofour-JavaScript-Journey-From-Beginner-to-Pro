@@ -36,7 +36,103 @@
     <p>String are immutable:string cannot be changed but can only be replaced.</p>
     <hr>
     <hr>
+    <p>javastring string trim()</p>
+    <p>the trim() method remove whitespace from both sides of a string:</p>
+    <p id="trim"></p>
+    <script>
+       let fullname=" Admin";
+       let omit=fullname.trim();
+       document.getElementById('trim').innerHTML="Lenght of of fullname:"+fullname.length+"<br>"+
+       "Lenght of Omit:"+omit.length
+    </script>
+    <hr>
+    <p>The trimStart() method works like trim(),but removes whitespace from the start of the string</p>
+    <p id="str"></p>
+    <p id="str1"></p>
+    <script>
+        str1="    vscode"
+        str2=str1.trimStart();
+        str3=str1.length
+        str4=str2.length
+        document.getElementById('str').innerHTML="length of str 1 is"+" "+str4+"<br>"+
+        str3;
 
+        str5="vscode     "
+        str6=str1.trimEnd();
+        str7=str1.length
+        str8=str2.length
+        document.getElementById('str1').innerHTML="length of str 1 is"+" "+str8+"<br>"+
+        str7;
+    </script>
+    <hr>
+    <p>javascript String padding</p>
+    <p>PadStart()</p>
+    <p>The PadStart() method pads a string from the start </p>
+    <p>It Pad the string with another string (multiple times) until it reaches a given lenght</p>
+    <p id="five"></p>
+    <p id="five 1"></p>
+    <script>
+        let five="5"
+        document.getElementById('five').innerHTML=five.padStart(4,"0");
+        document.getElementById('five 1').innerHTML=five.padStart(4,"x");
+    </script>
+    <hr>
+    
+    <p>toString()</p>
+    <p>is used to convert numbers to string</p>
+    <p id="convertion"></p>
+    <script>
+        let number=7;
+        numb=number.toString();
+        document.getElementById('convertion').innerHTML=numb.padStart(3,"s");
+    </script>
+<hr>
+    <p>PadEnd( )</p>
+    <p>The PadEnd() method pads a string from the end</p>
+    <p>It pads string with another string(multiples times) until it reaches a given length</p>
+    <p id="padded"></p>
+    <script>
+        Pend="90"
+        documemt.getElementById('padded').innerHTML=Pend.padEnd(2,"t")
+    </script>
+    <hr>
+    <p>javascript String repeat</p>
+    <p>The reapeat()</p>
+    <p>The repeat() method returns  a new string </p>
+    <p>The repeat() method does not change the original string</p>
+    <p id="hello"></p>
+    <script>
+        let hello="Hello World";
+        document.getElementById('hello').innerHTML=hello.repeat(2);
+    </script>
+    <hr>
+    <p>Replacing String</p>
+   <p>The replacing method replace method replaces a specified a value with another value in the string  </p>
+    <p id="replace"></p>
+    <script>
+        let welcome="Please visit Microsoft";
+        let newtext=welcome.replace("Microsoft","Github");
+        document.getElementById('replace').innerHTML=newtext;
+    </script>
+    <p>To use a case insensitive use the regular expression with and /i flag(</p>
+    <p id="greet"></p>
+    <script>
+        greeting="WELCOME to my tutorials";
+        document.getElementById('greet').innerHTML=greeting.replace(/WELCOME/i,"come")
+    </script>
+    <p>Replace all occurence of "Microsoft" with "Github" in the paragraph</p>
+
+    <p id="global"></p>
+    <script>
+        General="Please visit Microsoft and Microsoft";
+        document.getElementById('global').innerHTML=General.replace(/Microsoft/g,"github")
+    </script>
+    <!-- <p>ReplaceAll()</p>
+    <script>
+        let all="I love cats, Cats are very easy to love,Cats are very popuplar";
+        text=all.replaceAll("Cats","Dog");
+        text-all.replaceAll("cats","dogs");
+    </script> -->
     
 </body>
 </html>
