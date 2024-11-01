@@ -6,6 +6,65 @@
     <title>Document</title>
 </head>
 <body>
-   
+    <p>JavaScript String indexOf()</p>
+    <p>The indexOf() method returns the index(position) of the first occurence of a string in a string or it returns -1 if the string is not found</p>
+    <p id="Index"></p>
+    <script>
+        text="Please locate where locate occurs";
+        let index= text.indexOf("locate");
+        document.getElementById('Index').innerHTML=index;
+    </script>
+    <hr>
+    <p>JavaScript string lastindexOf()</p>
+    <p>The lastindexOf() method returns the index of the last occurence of a specified text in a string</p>
+    <p id="last"></p>
+    <p id="not"></p>
+    <p id="param"></p>
+    <p id="LParam"></p>
+    <script>
+        newtext="Please locate where 'locate' occurs!";
+        update=newtext.lastIndexOf("locate");
+        document.getElementById('last').innerHTML=update;
+        document.getElementById('not').innerHTML=newtext.lastIndexOf('John');
+        document.getElementById('param').innerHTML=newtext.indexOf('locate',15);
+        document.getElementById('LParam').innerHTML=newtext.lastIndexOf("locate",15)
+    </script>
+    <p>The lastIndexOf() method searches backwards (from the end to the beginning),meaning:if the second parameter is 15,the search start at position 15 and searches to the beginningof the string </p>
+
+    <hr>
+    <p>JavaScript string search()</p>
+    <p>The search() method searches a string for a string (or a regular expression) and return the position of the match</p>
+    <p id="locate"></p>
+    <p id="A.locate"></p>
+    <script>
+        message="Please locate where 'locate' occurs";
+        document.getElementById('locate').innerHTML=message.search('locate');
+        document.getElementById('A.locate').innerHTML=message.search(/locate/);
+    </script>
+    <p>Did You Notice</p>
+    <p>The two method, indexOf() and search(),are equal?</p>
+    <p>They accept the same argument(parametrs) and return the same value</p>
+    <ul>
+        <p>The two method are not equal.These are the differences:</p>
+        <li>The search() method cannot take a second start position argument</li>
+        <li>The indexOf() method cannot take powerful search values (regular expression)</li>
+        <p>You will learn more about regular expression in a later chapter</p>
+    </ul>
+
+    <hr>
+    <p>JavaScript string match</p>
+    <p>The match() method return an array containing the result of matching a string (or a regular expression)</p>
+    <p id="match"></p>
+    <p id="Cmatch"></p>
+    <p id="2match"></p>
+    <script>
+        poem='The rain in SPAIN stay mainly  in the plain';
+        myArr=poem.match(/ain/g);
+        myArr2=poem.match('ain')
+        document.getElementById('match').innerHTML=myArr;
+        document.getElementById('Cmatch').innerHTML=myArr.length;
+        document.getElementById('2match').innerHTML=myArr2.length+" "+myArr2;        
+
+    </script>
 </body>
 </html>
