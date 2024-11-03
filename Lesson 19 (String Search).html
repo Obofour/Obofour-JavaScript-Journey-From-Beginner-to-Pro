@@ -64,7 +64,44 @@
         document.getElementById('match').innerHTML=myArr;
         document.getElementById('Cmatch').innerHTML=myArr.length;
         document.getElementById('2match').innerHTML=myArr2.length+" "+myArr2;        
-
     </script>
+    <hr>
+    <p>JavaScript matchAll()</p>
+    <p id="demo"></p>
+    <script>
+        let Text="I love cats.Cats are very easy to love.Cats are very popular.";
+        document.getElementById('demo').innerHTML=Text.matchAll(/Text/gi);
+    </script>
+
+    <p>The matchAll() is an ES2020 feature <br> it does not work in Internet Explorer</p>
+    <hr>
+    <p>JavaScript include()</p>
+    <p id="include"></p>
+    <p id="Pinclude"></p>
+    <script>
+        let Message="Hello world,welcome to the universe";
+        document.getElementById('include').innerHTML=Message.includes("world");
+        document.getElementById('Pinclude').innerHTML=Message.includes("world,12");
+    </script>
+    <p>include() is case sensitive <br>include() is an ES6 feature <br>include() is not supported in the Internet Explorer</p>
+
+    <hr>
+    <p>JavaScript String startWith()</p>
+    <p>The startWith() method returns true or false if the string begin with a specified value <br>Otherwise it return false</p>
+    <p id="demo 2"></p>
+ <script>
+    let string="Hello world,welcome to the universe";
+    document.getElementById('demo 2').innerHTML=string.startsWith('world',6);
+ </script>   
+ <p>include() is case sensitive <br>include() is an ES6 feature <br>include() is not supported in the Internet Explorer</p>
+<hr>
+ <p id="end"></p>
+ <p>JavaScript String endsWith()</p>
+ <p>The endsWith() method returns true if te end with a specified value</p>
+ <p>Otherwise it return false</p>
+ <p id="String"></p>
+ <script>
+    
+ </script>
 </body>
 </html>
