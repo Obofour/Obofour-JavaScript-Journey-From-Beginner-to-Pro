@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>NaN</h2>
+    <p>NaN is a JavaScript reserved word indicating that number is not a legal number</p>
+    <p>Trying to do arithemetic with a non-numeric string will result in NaN(not a number)</p>
+    <p id="example"></p>
+    <p id="example 2"></p>
+    <script>
+        document.getElementById('example').innerHTML="apple"/100;
+        document.getElementById('example 2').innerHTML="10"/100;
+    </script>
+    <p>You can use the JavaScript function isNaN() to find out if a value is not a number</p>
+    <p id="demo"></p>
+    <script>
+        let x=100/"Apple";
+        document.getElementById("demo").innerHTML=isNaN(x);
+    </script>
+    <p>typeof of NaN return number</p>
+    <hr>
+    <h2>Infinity</h2>
+    <p>Infinity is the value JavaScript will return if you calculate a number outside the largest possible number</p>
+    <p id="infinity"></p>
+ <script>
+        let myNumber=2
+        let txt="";
+        while(myNumber !=Infinity){
+            myNumber=myNumber*myNumber;
+            txt=txt+myNumber+"<br>";
+        }
+        document.getElementById('infinity').innerHTML=txt;
+    </script>
+    <p>division by Zero generate infinity</p>
+    <p>typeof Infinity return number</p>
+    <hr>
+    <h2>Hexadecimal</h2>
+    <p>JavaScript interprete numeric constant as Hexadecimal if they they are preceeded by 0x</p>
+    <p id="hex"></p>
+    <script>
+        let j=0xFF;
+        document.getElementById('hex').innerHTML=j;
+    </script>
+    <p>The toString() method can output numbers from base 2 to 36:</p>
+    <p id="convert"></p>
+   <script>
+    let number=32;
+    convert=number.toString(2);
+    document.getElementById('convert').innerHTML=convert;
+</script>
+<hr>
+<h2>Number (Object)</h2>
+<p id="number"></p>
+<p id="comparism"></p>
+<script>
+    let h=123;
+    let r= new Number(123);
+    document.getElementById('number').innerHTML=typeof(h)+"<br>"+typeof(r);
+    document.getElementById('comparism').innerHTML=(h==r);
+</script>
+<p>(===) Numbers and Numbers Object cannot be safely compared</p>
+<p id="demo"></p>
+<script>
+    let d=500;
+    let g=new Number(500);
+   
+    document.getElementById('demo').innerHTML= (d===g);
+
+</script>
+</body>
+</html>
