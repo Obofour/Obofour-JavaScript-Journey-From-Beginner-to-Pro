@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Numbers can be written with or without decimals</h2>
+    <p id="decimals"></p>
+    <script>
+        x=6;
+        y=6.5;
+        document.getElementById('decimals').innerHTML=x + "<br>"+y
+    </script>
+    <hr>
+    <h2>Exponent</h2>
+    <p>Extra large and extra small numbers are written exponent</p>
+    <p id="exponent"></p>
+    <script>
+        m=123e5;
+        n=123e-5;
+        document.getElementById('exponent').innerHTML=typeof(m)+"<br>"+m+"<br>"+n ;
+    </script>
+    <hr>
+    <h2>Float Precision</h2>
+    <p></p>
+    <p id="precision"></p>
+    <script>
+        let c=0.5+0.6;
+        document.getElementById('precision').innerHTML=c
+    </script>
+    <hr>
+    <hr>Adding numbers and String</hr>
+    <p>JavaScript uses the + operator for both addition and concatenation</p>
+    <p>Numbers are added ,String are concatenated</p>
+    <p id="addition"></p>
+    <p id="concatenation"></p>
+
+<script>
+j=10;
+g=6;
+h="8";
+t="1"
+document.getElementById('addition').innerHTML=j+6;
+document.getElementById('concatenation').innerHTML=h+t;
+</script>
+<hr>
+<p>A string plus a number concatenate</p>
+<p>JavaScript convert string string to numbers when dividing or multiplying</p>
+<p id="division"></p>
+<p id="multiplication"></p>
+<script>
+    p="100";
+    g="10";
+    document.getElementById('division').innerHTML=p/g;
+    document.getElementById('multiplication').innerHTML=p*g;
+</script>
+
+</body>
+</html>
