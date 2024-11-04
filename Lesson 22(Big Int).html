@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>JavaScript BigInt</h2>
+    <p>JavaScript BigInt variables are used to store big integer values that are too big to be represented by a normal JavaScript Number</p>
+    <h5>How to create a BigInt</h5>
+    <p>To create a bigint,append n the end of the integer or call Bigint()</p>
+    <p id="big"></p>
+    <script>
+        let x=99999999999;
+        let y=99999999999n;
+        document.getElementById('big').innerHTML=typeof x +"<br>"+typeof y;
+    </script>
+    <p id="aliter">Or</p>
+    <script>
+        let m=123456789;
+        let n=BigInt(123456789);
+        document.getElementById('aliter').innerHTML=typeof(m)+"<br>"+typeof(n);
+    </script>
+    <hr>
+    <ul>
+        <p>BigInt is the second numeric data type in JavaScript(after Number).</p>
+        <p>With BigInt the total number of supported data types in JavaScript in 8</p>
+        <li>String</li>
+        <li>Number</li>
+        <li>Bigint</li>
+        <li>Undefined</li>
+        <li>Null</li>
+        <li>Symbol</li>
+        <li>Object</li>
+    </ul>
+    <h7>BigInt Operators</h7>
+    <h7>Operators that can be used on the JavaScript Number can also be used on a bigint </h7>
+    <p id="R"></p>
+    <script>
+        let R=111111111n;
+        let H=111111111n;
+        document.getElementById('R').innerHTML=R*H;
+    </script>
+    <p>Big Int cannot have decimals</p>
+    <p id="decimal"></p>
+    <script>
+        let F=5n;
+        let U=F/2;
+        document.getElementById("decimal").innerHTML=U;
+    </script>
+    <h7>BigInt Hex,Octal and Binary</h7>
+    <p>BigInt can also be written in hexadecimal,octal or binary notation</p>
+    <script>
+        let hex=0x2000000000003n;
+        let oct=Oo4000000000000000007n;
+        let bin=0b1000000000000011n;
+
+        document.getElementById('binary').innerHTML=hex+"<br>"+oct
+    </script>
+    <hr>
+    <h2>Minimum and Maximum safe integer</h2>
+    <p>MAX_SAFE_INTEGER</p>
+    <p id="integer"></p>
+    <p id="Minimum"></p>
+    <script>
+        let J=Number.MAX_SAFE_INTEGER;
+        let G=Number.MIN_SAFE_INTEGER;
+        document.getElementById('integer').innerHTML=J;
+        document.getElementById('Minimum').innerHTML=G;
+    </script>
+    <hr>
+    <h2>New Number Methods</h2>
+    <ul>
+        <li>Number.isInteger()</li>
+        <li>NUmber.isSafeInteger()</li>
+    </ul>
+    <p>The Number.isInteger() method returns true if the argument is an integer</p>
+    <p id="isInteger"></p>
+    <p id="demo"></p>
+    <script>
+        document.getElementById('isInteger').innerHTML=Number.isInteger(10)+"<br>"+Number.isInteger(10.5);
+        document.getElementById('demo').innerHTML=Number.isSafeInteger(10)+"<br>"+Number.isSafeInteger(10.5);
+    </script>
+
+</body>
+</html>
