@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="number"></p>
+    <p id="exponential"></p>
+    <p id="fixed"></p>
+    <p id="value"></p>
+    <script>
+        // toString() Method 
+        // Returns number as string 
+
+        // toexponenetial() return a string with a number rounded or written in rounded and written using exponential notation.
+        // A parameter defines the number of number rounded and 
+
+        // toFixed() method returns a string,with the number written with a specified number of decimals.round a number to a given number of digits.
+
+        // The valueOf() return number as number
+        let x=123;
+        document.getElementById("number").innerHTML=x.toString();
+        let y=9.656;
+        document.getElementById("exponential").innerHTML=
+        y.toExponential(2)+"<br>"
+        y.toExponential(4)+"<br>"
+        y.toExponential(4)+"<br>"
+        y.toExponential(6)
+
+        let z=9.656;
+        document.getElementById('fixed').innerHTML=z.toFixed()+"<br>"
+        // z.toFixed(2)+"<br>"
+
+        let a=123;
+        document.getElementById('value').innerHTML=a.valueOf();
+
+    </script>
+    <hr>
+
+
+    <p id="Numbers"></p>
+    <p id="date"></p>
+    <p id="parsed"></p>
+    <p id="float"></p>
+    <p id="integer"></p>
+    <p id="parsedf"></p>
+    <script>
+        // Number() method converts variables to numbers:
+        // returns NaN if it can not be converted
+        // The Number() Method Used on Dates.Returns the number of milliseconds.
+        // parseInt() parses a string and return a whole number.Spaces are allowed.Only the first number is returned:
+        // parseFloat() parses a string and return a number.Spaces are allowed .only the first number as returned
+        // Number.isInteger() returns true if the argument is an integer  
+        // A safe integer is an integer that can be exactly represented as a double number.The Number.isSafeInteger() method returns if the argument is a safe integer.Safe integers are all integers from -(2^53 -1) to +(2^53+1)
+        //Number.parseFloat() and Number.parsedInt parses a string and return a number.Spaces are allowed.Only the first numbers is returned:   
+      
+        document.getElementById("Numbers").innerHTML=Number(true)+"<br>"+
+        Number(false)+"<br>"+
+        Number("10")+"<br>"+
+        Number('10,33')+"<br>"+
+        Number("John");
+
+        let h=new Date("2024-12-12");
+        document.getElementById('date').innerHTML=Number(h);
+
+        document.getElementById("parsed").innerHTML=parseInt("10")+"<br>"+
+        parseInt("-10")+"<br>"+
+        parseInt("10.33")+"<br>"+
+        parseInt("10 6")+"<br>"+
+        parseInt("10 years")+"<br>"+
+        parseInt("years 10")
+
+        document.getElementById("float").innerHTML=parseFloat("10")+"<br>"+
+        parseFloat("-10")+"<br>"+
+        parseFloat("10.33")+"<br>"+
+        parseFloat("10 6")+"<br>"+
+        parseFloat("10 years")+"<br>"+
+        parseFloat("years 10");
+
+        document.getElementById("integer").innerHTML=Number.isInteger(10)+"<br>"+Number.isInteger(12.6);
+
+        document.getElementById("safeInteger").innerHTML=Number.isInteger(10)+"<br>"+
+        Number.isSafeInteger(1234567890);
+
+        document.getElementById("parsedf").innerHTML=
+        Number.parseFloat("-10")+"<br>"+
+        Number.parseFloat("10.33")+"<br>"+
+        Number.parseFloat("10 6")+"<br>"+
+        Number.parseFloat("10 years")+"<br>"+
+        Number.parseFloat("years 10");
+
+
+
+    </script>
+</body>
+</html>
