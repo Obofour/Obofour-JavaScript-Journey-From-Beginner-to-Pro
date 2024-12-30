@@ -24,8 +24,9 @@ cars=["camry","volvo","benz"]
 for(let i=0,len=cars.length,text="";i <len;i++){
     text+=cars[i]+"<br>"
 }
-
+console.log(text)
 //And you can Omit expression 1(like when your values are set before the loop start)
+
 let i=2;
 let len=cars.length
 let text=""
